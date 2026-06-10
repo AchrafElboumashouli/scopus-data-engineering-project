@@ -34,29 +34,7 @@ This project automates the analysis of scientific articles authored by Moroccan 
 
 ## 🏗️ Architecture
 
-```
-Scopus Export (.zip)
-        │
-        ▼
-  S3 Bronze Layer  ──► Lambda (Preprocessing)
-        │
-        ▼
-  S3 Silver Layer  ──► AWS Glue Workflow
-        │                    │
-        │         ┌──────────┼──────────────┐
-        │         ▼          ▼              ▼
-        │  AffiliationJob  AuthorJob   DocumentJob
-        │         │          │              │
-        │         └──────────┴──────────────┘
-        │                    │
-        │              JournalJob ──► CleaningJob
-        │                    │
-        ▼                    ▼
-  S3 Gold Layer  ──► AWS Glue Crawler
-        │
-        ▼
-  Amazon Athena  ──► Power BI (Direct Query)
-```
+![Architecture](Images/architecture.png)
 
 The pipeline follows a **Bronze → Silver → Gold** medallion architecture:
 
@@ -190,7 +168,7 @@ Follow the [AWS ODBC v2 setup guide](https://docs.aws.amazon.com/athena/latest/u
 ---
 
 ## 📊 Dashboard Previews
-
+"Images/architecture.png"
 <p align="center">
   <img src="Images/1.png" width="30%">
   <img src="Images/2.png" width="30%">
