@@ -168,7 +168,6 @@ Follow the [AWS ODBC v2 setup guide](https://docs.aws.amazon.com/athena/latest/u
 ---
 
 ## 📊 Dashboard Previews
-"Images/architecture.png"
 <p align="center">
   <img src="Images/1.png" width="30%">
   <img src="Images/2.png" width="30%">
