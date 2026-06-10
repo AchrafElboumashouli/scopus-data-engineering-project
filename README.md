@@ -186,7 +186,7 @@ Follow the [AWS ODBC v2 setup guide](https://docs.aws.amazon.com/athena/latest/u
 
 ## 👤 Author
 
-**Achraf El Boumashouli**
+**ACHRAF EL BOUMASHOULI & GHIZLANE AFAILAL TREBAK**
 
 ---
 
